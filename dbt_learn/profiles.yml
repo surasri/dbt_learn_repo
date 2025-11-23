@@ -1,0 +1,9 @@
+dbt_learn:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: DBT_PRACTICE
+      schema: PUBLIC
