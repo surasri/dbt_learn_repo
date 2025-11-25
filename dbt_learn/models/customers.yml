@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: customers1
+    description: "Customer dimension table"
+    columns:
+      - name: customer_id
+        description: "Primary key"
+        tests:
+          - unique        # ensures no duplicate IDs
+          - not_null      # ensures no missing IDs
+
+      - name: email
+        description: "Customer email address"
+        tests:
+          - not_null
+          - unique
+          - accepted_values:
+              values: ["gmail.com", "yahoo.com", "outlook.com"]
+              quote: false
+              

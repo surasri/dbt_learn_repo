@@ -1,0 +1,5 @@
+customer_id,first_name,last_name,email,updated_at
+1,Jane,Doen,jane.doe@email.com,2025-11-01
+2,John,Smiths,john.smith@email.com,2025-11-05
+3,Alice,Wong,alice.wong@email.com,2025-11-10
+4,Bob,Johnson,bob.johnson@email.com,2025-11-15

@@ -6,4 +6,6 @@ dbt_learn:
       role: ACCOUNTADMIN
       warehouse: COMPUTE_WH
       database: DBT_PRACTICE
-      schema: PUBLIC
+      schema: RAW_LAYER
+      
+      
