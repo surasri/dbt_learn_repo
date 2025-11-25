@@ -17,3 +17,19 @@ snapshot-paths:
 models:
   dbt_learn:
     +materialized: view
+# 👇 Add this block for seeds
+seeds:
+  dbt_learn:
+    +quote_columns: false    # avoids quoting issues in Snowflake
+    +column_types:           # optional: enforce Snowflake column types
+      customer_id: integer
+      first_name: varchar
+      last_name: varchar
+      email: varchar
+      updated_at: varchar
+      
+      
+      
+      
+      
+

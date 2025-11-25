@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_layer
+    database: DBT_PRACTICE
+    schema: RAW_LAYER
+    tables:
+      - name: customers
+      
